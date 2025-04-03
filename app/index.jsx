@@ -1,33 +1,39 @@
 import { View, Text, StyleSheet, ImageBackground } from "react-native";
-import Link from "expo-router";
 
 export default function Screen() {
-    return (
-        <ImageBackground
-            source={require("../assets/image 9.png")} // Caminho da imagem de fundo
-            style={styles.background}
-        >
-            <View style={styles.container}>
-                <Text style={styles.title}>Olá, Tudo bem?</Text>
-                {/* Adicione mais elementos aqui */}
-            </View>
-        </ImageBackground>
-    );
+  return (
+    <View style={styles.wrapper}>
+      <ImageBackground
+        source={require("../assets/image 9.png")}
+        style={styles.background}
+        resizeMode="cover" 
+      ></ImageBackground>
+
+      <View style={styles.container}>
+        <Text style={styles.title}>Olá, Tudo bem?</Text>
+      </View>
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
-    background: {
-        flex: 1,
-        resizeMode: "cover",
-    },
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-    },
-    title: {
-        fontSize: 24,
-        fontWeight: 'bold',
-        color: '#fff',
-    },
+  wrapper: {
+    flex: 1, 
+  },
+  background: {
+    flex: 1, 
+    position: "absolute", 
+    width: "100%", 
+    height: "100%", 
+  },
+  container: {
+    flex: 1,
+    justifyContent: "center", 
+    alignItems: "center", 
+  },
+  title: {
+    fontSize: 24,
+    fontWeight: "bold",
+    color: "#fff", 
+  },
 });
