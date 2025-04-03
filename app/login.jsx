@@ -1,10 +1,17 @@
 import React from "react";
-import { View, Text, StyleSheet, TextInput, TouchableOpacity, ImageBackground } from "react-native";
+import {
+  View,
+  Text,
+  StyleSheet,
+  TextInput,
+  TouchableOpacity,
+  ImageBackground,
+} from "react-native";
 
 export default function Login() {
   return (
     <ImageBackground
-      source={require("../assets/image 9.png")} // Mesma imagem usada no estilo da aplicação
+      source={require("../assets/image 9.png")}
       style={styles.background}
       resizeMode="cover"
     >
@@ -38,11 +45,11 @@ export default function Login() {
 const styles = StyleSheet.create({
   background: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: "center", // Centraliza verticalmente
+    alignItems: "center", // Centraliza horizontalmente
   },
   overlay: {
-    backgroundColor: "rgba(0, 0, 0, 0.4)",
+    backgroundColor: "rgba(0, 0, 0, 0.6)", // Fundo semi-transparente
     padding: 20,
     borderRadius: 10,
     width: "90%",
