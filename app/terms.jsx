@@ -1,52 +1,59 @@
-import React from 'react';
-import { View, Text, StyleSheet, ScrollView, Pressable } from 'react-native';
-import { Link } from 'expo-router';
+import React from "react";
+import { View, Text, StyleSheet, ScrollView, Pressable } from "react-native";
+import { Link } from "expo-router";
 
 export default function TermosDeUso() {
   return (
     <ScrollView contentContainerStyle={styles.container}>
       <Text style={styles.title}>Termos de Uso</Text>
-     
+
       <View style={styles.section}>
         <Text style={styles.sectionTitle}>1. Introdução</Text>
         <Text style={styles.sectionText}>
-          Bem-vindo ao nosso aplicativo. Ao utilizar nossos serviços, você concorda com estes termos de uso.
+          Bem-vindo ao nosso aplicativo. Ao utilizar o nosso aplicativo de
+          viagem para Fernando de Noronha, você concorda com os termos e
+          condições descritos neste documento. Caso não concorde, não utilize o
+          aplicativo.
         </Text>
       </View>
-     
+
       <View style={styles.section}>
         <Text style={styles.sectionTitle}>2. Uso do Aplicativo</Text>
         <Text style={styles.sectionText}>
-          Você se compromete a usar o aplicativo de forma ética, legal e de acordo com todas as leis e regulamentos aplicáveis.
+          O uso do aplicativo é exclusivo para fins pessoais e informativos.
+          Você concorda em não utilizar o aplicativo para fins comerciais,
+          ilegais ou prejudiciais a terceiros.
         </Text>
       </View>
-     
+
       <View style={styles.section}>
-        <Text style={styles.sectionTitle}>3. Privacidade</Text>
+        <Text style={styles.sectionTitle}>3. Objetivo do aplicativo</Text>
         <Text style={styles.sectionText}>
-          Respeitamos sua privacidade. Os dados pessoais são tratados de acordo com nossa Política de Privacidade.
+          O aplicativo tem como objetivo fornecer informações sobre Fernando de
+          Noronha, como atrações turísticas, transporte, hospedagem,
+          restaurantes e outras atividades para facilitar a sua experiência de
+          viagem.
         </Text>
       </View>
-     
+
       <View style={styles.section}>
-        <Text style={styles.sectionTitle}>4. Limitação de Responsabilidade</Text>
+        <Text style={styles.sectionTitle}>4. Conteúdo</Text>
         <Text style={styles.sectionText}>
-          Nosso aplicativo é fornecido "como está", sem garantias de qualquer tipo, expressas ou implícitas.
+          As informações disponibilizadas no aplicativo são atualizadas
+          periodicamente, mas não garantimos a precisão ou a disponibilidade de
+          todos os dados em tempo real. Recomendamos sempre confirmar detalhes
+          diretamente com os fornecedores locais.
         </Text>
       </View>
-     
+
       <View style={styles.section}>
-        <Text style={styles.sectionTitle}>5. Modificações</Text>
+        <Text style={styles.sectionTitle}>5. Alterações nos Termos</Text>
         <Text style={styles.sectionText}>
-          Reservamos o direito de modificar estes termos a qualquer momento. As alterações serão comunicadas aos usuários.
+          Reservamo-nos o direito de modificar estes Termos de Uso a qualquer
+          momento, sem aviso prévio. Recomendamos que você reveja regularmente
+          esta página para estar ciente de quaisquer alterações.
         </Text>
       </View>
-     
-      <Link href="/" asChild>
-        <Pressable style={styles.button}>
-          <Text style={styles.buttonText}>Voltar para Home</Text>
-        </Pressable>
-      </Link>
     </ScrollView>
   );
 }
@@ -55,21 +62,20 @@ const styles = StyleSheet.create({
   container: {
     flexGrow: 1,
     padding: 20,
-    backgroundColor: '#f5f5f5',
+    backgroundColor: "#f5f5f5",
   },
   title: {
     fontSize: 24,
-    fontWeight: 'bold',
-    textAlign: 'center',
+    fontWeight: "bold",
+    textAlign: "center",
     marginBottom: 20,
-    color: '#333',
+    color: "#333",
   },
   section: {
     marginBottom: 20,
     padding: 15,
-    backgroundColor: '#fff',
+    backgroundColor: "#fff",
     borderRadius: 8,
-    shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.1,
     shadowRadius: 4,
@@ -77,27 +83,13 @@ const styles = StyleSheet.create({
   },
   sectionTitle: {
     fontSize: 18,
-    fontWeight: 'bold',
+    fontWeight: "bold",
     marginBottom: 10,
-    color: '#3b5998',
+    color: "#1565C0",
   },
   sectionText: {
     fontSize: 16,
-    color: '#666',
+    color: "#666",
     lineHeight: 24,
-  },
-  button: {
-    backgroundColor: '#3b5998',
-    paddingVertical: 12,
-    paddingHorizontal: 20,
-    borderRadius: 5,
-    alignSelf: 'center',
-    marginTop: 20,
-  },
-  buttonText: {
-    color: '#fff',
-    fontSize: 16,
-    textAlign: 'center',
-    fontWeight: 'bold',
   },
 });
