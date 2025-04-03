@@ -45,11 +45,11 @@ export default function Login() {
 const styles = StyleSheet.create({
   background: {
     flex: 1,
-    justifyContent: "center", // Centraliza verticalmente
-    alignItems: "center", // Centraliza horizontalmente
+    justifyContent: "center", 
+    alignItems: "center", 
   },
   overlay: {
-    backgroundColor: "rgba(0, 0, 0, 0.6)", // Fundo semi-transparente
+    backgroundColor: "rgba(0, 0, 0, 0.4)", 
     padding: 20,
     borderRadius: 10,
     width: "90%",
