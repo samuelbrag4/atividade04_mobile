@@ -1,6 +1,6 @@
 import { Tabs } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
-import AntDesign from '@expo/vector-icons/AntDesign';
+import AntDesign from "@expo/vector-icons/AntDesign";
 
 export default function Layout() {
   return (
@@ -24,6 +24,11 @@ export default function Layout() {
         name="index"
         options={{
           title: "",
+          headerTitle: "Página Inicial",
+          headerStyle: {
+            backgroundColor: "#90CAF9",
+          },
+          headerTintColor: "#ffff",
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="home" color={color} size={size} />
           ),
@@ -33,6 +38,11 @@ export default function Layout() {
         name="about"
         options={{
           title: "",
+          headerTitle: "Sobre nós",
+          headerStyle: {
+            backgroundColor: "#90CAF9",
+          },
+          headerTintColor: "#ffff",
           tabBarIcon: ({ color, size }) => (
             <AntDesign name="infocirlceo" color={color} size={size} />
           ),
@@ -42,6 +52,11 @@ export default function Layout() {
         name="login"
         options={{
           title: "",
+          headerTitle: "Login",
+          headerStyle: {
+            backgroundColor: "#90CAF9",
+          },
+          headerTintColor: "#ffff",
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="person" color={color} size={size} />
           ),
@@ -51,6 +66,11 @@ export default function Layout() {
         name="terms"
         options={{
           title: "",
+          headerTitle: "Termos",
+          headerStyle: {
+            backgroundColor: "#90CAF9",
+          },
+          headerTintColor: "#ffff",
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="book" color={color} size={size} />
           ),

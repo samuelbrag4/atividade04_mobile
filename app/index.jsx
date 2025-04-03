@@ -1,13 +1,11 @@
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, ImageBackground } from "react-native";
 import Link  from "expo-router";
 
 export default function Screen() {
     return (
-        <View style={styles.container}>
-            <Text style={styles.title}>Olá, Tudo bem?</Text>
-        </View>
+        <ImageBackground>
 
-        
+        </ImageBackground>
     );
 }
 
